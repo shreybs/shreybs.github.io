@@ -23,12 +23,32 @@
           </i>
         </a>
         {% endif %}
-        <!-- github -->
+        <!-- Github -->
         {% if site.github != "" %}
         <a class="header_btn" href="https://github.com/{{ site.github }}">
           <i class="fa fa-github">
             {% if page.btn_text != false %}
             <p class="btn_text">Github</p>
+            {% endif %}
+          </i>
+        </a>
+        {% endif %}
+        <!-- Twitter -->
+        {% if site.twitter != "" %}
+        <a class="header_btn" href="https://twitter.com/{{ site.twitter }}">
+          <i class="fa fa-twitter">
+            {% if page.btn_text != false %}
+            <p class="btn_text">Twitter</p>
+            {% endif %}
+          </i>
+        </a>
+        {% endif %}
+        <!-- LinkedIn -->
+        {% if site.linkedin != "" %}
+        <a class="header_btn" href="https://linkedin.com/in/{{ site.linkedin }}">
+          <i class="fa fa-linkedin">
+            {% if page.btn_text != false %}
+            <p class="btn_text">LinkedIn</p>
             {% endif %}
           </i>
         </a>
