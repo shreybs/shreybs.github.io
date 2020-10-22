@@ -1,0 +1,15 @@
+I"}<ul id="ul_toc" class="ul_toc">
+  <li><a href="#">
+TryHackMe - CC Pentest Final Exam Writeup
+</a></li>
+  <li><a href="#intro">Intro</a></li>
+  <li><a href="#analysis">Analysis</a>
+    <ul>
+      <li><a href="#nmap">Nmap</a></li>
+      <li><a href="#gobuster">GoBuster</a></li>
+      <li><a href="#user">User</a></li>
+      <li><a href="#root">Root</a></li>
+    </ul>
+  </li>
+</ul>
+:ET

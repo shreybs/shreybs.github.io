@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <!-- multi-device width -->
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <!-- site description -->
+  
+  <meta content="" name="description" />
+  <!-- referer for 3rd-part images-->
+  <meta content="no-referrer" name="referrer" />
+  <!-- title -->
+  <title>
+    
+    Home
+    
+  </title>
+  <!-- icon -->
+  <link href="http://localhost:4000/assets/img/favicon.ico?" rel="shortcut icon bookmark" type="image/x-icon" />
+  <!-- global stylesheet -->
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css" type="text/css" />
+  <!-- fa 5.9.0 -->
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/fa.min.css" type="text/css" />
+  <!-- global script -->
+  <script src="http://localhost:4000/assets/js/main.js" async></script>  
+  <!-- mathjax 2.7.5 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+  </head>
+  <body class="page">
+    <!-- background animations -->
+<div class="div_bg">
+  <canvas id="c"></canvas>
+</div>
+<script>
+  var c = document.getElementById("c");
+  var ctx = c.getContext("2d");
+  c.height = window.innerHeight;
+  c.width = window.innerWidth;
+  var txts = "αβγδεζηθ4ικλμνξοπρστυ2φχψω∷∫∮∝∞∧∨∑∏∪∩∈∵∴⊥‖∠⌒⊙≌√";
+  txts = txts.split("");
+  var font_size = 12;
+  var columns = c.width / font_size;
+  var drops = [];
+  for (var x = 0; x < columns; x++) drops[x] = 1;
+
+  function draw() {
+    ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+    ctx.fillRect(0, 0, c.width, c.height);
+    ctx.fillStyle = "#490";
+    ctx.font = font_size + "px arial";
+    for (var i = 0; i < drops.length; i++) {
+      var text = txts[Math.floor(Math.random() * txts.length)];
+      ctx.fillText(text, i * font_size, drops[i] * font_size);
+      if (drops[i] * font_size > c.height || Math.random() > 0.98) drops[i] = 0;
+      drops[i]++;
+    }
+  }
+  setInterval(draw, 20);
+</script>
+    <div class="container" id="ctner">
+      <div class="header">
+  <nav class="nav_bar">
+    <ul>
+      <!-- left header -->
+      <li class="li_left">
+        <!-- home -->
+        
+        <a class="header_btn" href="http://localhost:4000">
+          <i class="fa fa-home">
+            
+            <p class="btn_text">Home</p>
+            
+          </i>
+        </a>
+        
+        <!-- email -->
+        
+        <a class="header_btn" href="mailto://shreyas.belv@gmail.com">
+          <i class="fa fa-envelope-square">
+            
+            <p class="btn_text">Email</p>
+            
+          </i>
+        </a>
+        
+        <!-- github -->
+        
+        <a class="header_btn" href="https://github.com/shreybs/">
+          <i class="fa fa-github">
+            
+            <p class="btn_text">Github</p>
+            
+          </i>
+        </a>
+        
+        <!-- maximize -->
+        
+        <a class="header_btn" id="mxmz_btn" onclick="toggle_maximize()">
+          <i class="fa fa-window-maximize">
+            
+            <p class="btn_text" id="mxmz_text">Maximize</p>
+            
+          </i>
+        </a>
+        
+        <!-- access token -->
+        
+      </li>
+      <!-- right header -->
+      <span class="span_right">
+        
+        <a class="title">root</a>
+        
+        <a class="owner"> - shreybs</a>
+         
+      </span>
+    </ul>
+  </nav>
+  <hr />
+</div>
+<!-- table of content -->
+
+<!-- toggle maximize -->
+
+<script>
+  var ctner_state = 0;
+  var ctner = document.getElementById("ctner");
+</script>
+
+<!-- encrypt and decrypt -->
+
+
+      <div class="div_article" id="div_atcl">       
+        <article id="main_atcl" itemscope itemtype="http://schema.org/BlogPosting">
+          <p><img src="http://localhost:4000/assets/img/download.gif" alt="Logo1" class="img-responsive center-image" /></p>
+
+<h2 id="about">About</h2>
+<ul>
+  <li>Just an InfoSec enthusiast’s personal blog</li>
+  <li>Make yourself at home: social links above, writeups and other posts below, resources attached below too.</li>
+  <li>I also enjoy anime, rock music and playing the guitar :3 Enjoy your stay!</li>
+</ul>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li><a href="https://www.notion.so/Cyber-Security-Notes-71af3df58bba45c6bd171952ee6967aa"><strong>CyberSecurity Notes</strong></a></li>
+</ul>
+
+
+          
+<!-- list of articles: sort by date (by default) -->
+<h1 class="loa">Post List, by Date</h1>
+<table>
+    <thead>
+        <tr>
+            <th> TITLE </th>
+            <th> DATE </th>
+            <th> CATEGORY </th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        </tr>
+        <td class="td_title"><a href="http://localhost:4000/CCPentestFinal/">TryHackMe - CC Pentest Final Exam Writeup</a></td>
+        <td class="td_date">Oct 21, 20</td>
+        <td class="td_category">Writeup</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+        </article>
+          
+          <div class="footer">
+    <nav class="nav_bar">
+        <ul>
+            <li class="copyright">
+                © 2020
+            </li>
+            
+            <li>
+                There Is No Spoon.
+            </li>
+            
+    </nav>
+    </ul>
+</div>
+
+          
+      </div>
+    </div>
+  </body>
+</html>

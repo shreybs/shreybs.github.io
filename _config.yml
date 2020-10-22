@@ -1,8 +1,8 @@
 ## Settings
-title: pRoJEct-NeGYa
-owner: "DeerRIDER"
-url: "https://akiritsu.github.io"
-baseurl: "/pRoJEct-NeGYa"
+title: root
+owner: shreybs
+url: "https://shreybs.github.io"
+baseurl: 
 permalink: /:title/
 description: ""
 markdown: kramdown
@@ -10,11 +10,11 @@ webrick:
   headers:
     Access-Control-Allow-Origin: "*"
 ## Global Variables
-email: "akiritsu@outlook.com"
-github: "akiritsu/pRoJEct-NeGYa"
+email: "shreyas.belv@gmail.com"
+github: "shreybs/"
 
-statement: "Designed by DeerRIDER, All Rights Reserved"
+statement: "There Is No Spoon."
 # default max toc levels: 1 - 6 (h1 - h6)
 toc_level: 3
 # texts randomly displayed in background
-bgtext: "αβγδεζηθικλμνξοπρστυφχψω∷∫∮∝∞∧∨∑∏∪∩∈∵∴⊥‖∠⌒⊙≌√"
+bgtext: "αβγδεζηθ4ικλμνξοπρστυ2φχψω∷∫∮∝∞∧∨∑∏∪∩∈∵∴⊥‖∠⌒⊙≌√"
